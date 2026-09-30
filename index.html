@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Elijah Rwothoromo · Senior Software Engineer</title>
+<meta name="description" content="Elijah Rwothoromo is a senior software engineer in Kampala, Uganda, building mobile apps and platforms (Kotlin, Flutter, React Native, Django, Laravel, Vue) that keep working when the network doesn't.">
+<meta name="author" content="Elijah Rwothoromo">
+<link rel="canonical" href="https://rwothoromo.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Elijah Rwothoromo · Senior Software Engineer">
+<meta property="og:description" content="Elijah Rwothoromo is a senior software engineer in Kampala, Uganda, building mobile apps and platforms (Kotlin, Flutter, React Native, Django, Laravel, Vue) that keep working when the network doesn't.">
+<meta property="og:url" content="https://rwothoromo.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@rwothoromo">
+<meta name="theme-color" content="#0E6B58">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2314211D'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-weight='800' font-size='26' text-anchor='middle' fill='%23F3F4EF'%3EER%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Elijah Rwothoromo","jobTitle":"Senior Software Engineer","address":{"@type":"PostalAddress","addressLocality":"Kampala","addressCountry":"UG"},"url":"https://rwothoromo.github.io/","sameAs":["https://www.linkedin.com/in/rwothoromoelaijah/","https://github.com/Rwothoromo","https://profile.codersrank.io/user/rwothoromo","https://stackoverflow.com/users/9788442/elir","https://rwothoromo.wordpress.com/","https://twitter.com/rwothoromo"]}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: sticky identity column on the left, scrolling record on the right; stacks to one column on phones. */
+:root{
+  --bg:#F3F4EF;          /* cool paper */
+  --surface:#FBFBF8;
+  --ink:#14211D;         /* green-black */
+  --muted:#5A6862;
+  --line:#D6DBD3;
+  --accent:#0E6B58;      /* field green */
+  --signal:#B7791F;      /* amber, used sparingly */
+  --accent-soft:#E0EDE8;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"IBM Plex Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1614;--surface:#151F1C;--ink:#E4EAE6;--muted:#93A39C;--line:#26332F;
+  --accent:#4FC3A5;--signal:#E0A548;--accent-soft:#17302A;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0F1614;--surface:#151F1C;--ink:#E4EAE6;--muted:#93A39C;--line:#26332F;
+  --accent:#4FC3A5;--signal:#E0A548;--accent-soft:#17302A;color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.1}
+p{margin:0}
+
+.wrap{max-width:1180px;margin:0 auto;padding-inline:24px;padding-block:56px 80px;display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:72px}
+@media (max-width:900px){.wrap{grid-template-columns:minmax(0,1fr);gap:48px;padding-inline:16px;padding-block:32px 64px}}
+
+/* Identity column */
+.id{position:sticky;top:calc(env(safe-area-inset-top,0px) + 48px);align-self:start;display:flex;flex-direction:column;gap:22px}
+@media (max-width:900px){.id{position:static}}
+.mono-mark{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--bg);font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:-.02em}
+.id h1{font-size:clamp(40px,5.2vw,58px);font-weight:800;letter-spacing:-.035em}
+.id h1 span{display:block;color:var(--accent)}
+.role{font-family:var(--mono);font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.thesis{font-size:19px;line-height:1.45;max-width:30ch}
+.status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--accent-soft)}
+@media (prefers-reduced-motion:no-preference){.dot{animation:pulse 2.4s ease-in-out infinite}}
+@keyframes pulse{50%{box-shadow:0 0 0 7px transparent}}
+.nav{display:flex;flex-direction:column;gap:6px;font-family:var(--mono);font-size:13px}
+.nav a{color:var(--muted);text-decoration:none;display:flex;gap:10px;align-items:center}
+.nav a::before{content:"";width:16px;height:1px;background:var(--line);transition:width .2s,background .2s}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::before{width:32px;background:var(--accent)}
+@media (max-width:900px){.nav{display:none}}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{font-size:13.5px;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--surface)}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+.email{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-family:var(--mono);font-size:13.5px}
+.email code{user-select:all;overflow-wrap:anywhere}
+.btn{font:inherit;font-size:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:6px;padding:3px 9px;cursor:pointer}
+.btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* Record column */
+main{min-width:0;display:flex;flex-direction:column;gap:88px}
+@media (max-width:900px){main{gap:64px}}
+section{display:flex;flex-direction:column;gap:28px;scroll-margin-top:24px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+section>header{display:flex;flex-direction:column;gap:8px}
+section h2{font-size:clamp(28px,3.4vw,36px);font-weight:700;letter-spacing:-.02em}
+.lede{font-size:17.5px;max-width:64ch;color:var(--ink)}
+.prose{display:flex;flex-direction:column;gap:14px;max-width:64ch;color:var(--muted)}
+.prose strong{color:var(--ink);font-weight:600}
+
+/* Figures */
+.figs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.fig{padding:18px 16px 18px 0;display:flex;flex-direction:column;gap:4px}
+.fig+.fig{padding-left:16px;border-left:1px solid var(--line)}
+.fig b{font-family:var(--display);font-size:30px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.fig span{font-size:13px;color:var(--muted);line-height:1.35}
+@media (max-width:640px){.figs{grid-template-columns:repeat(2,minmax(0,1fr))}.fig:nth-child(3){padding-left:0;border-left:0}.fig:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* Work */
+.work{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:640px){.work{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.card .sector{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.card h3{font-size:21px;font-weight:700;letter-spacing:-.01em}
+.card p{font-size:14.5px;color:var(--muted)}
+.card .proof{font-size:14px;color:var(--ink);border-left:2px solid var(--signal);padding-left:10px;margin-top:auto}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:11.5px;padding:2px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent)}
+.card a.more{font-size:13.5px}
+
+/* Timeline */
+.tl{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.job{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;padding-block:24px;border-bottom:1px solid var(--line)}
+@media (max-width:640px){.job{grid-template-columns:minmax(0,1fr);gap:6px}}
+.when{font-family:var(--mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:4px;display:flex;flex-direction:column;gap:2px}
+.when .now{color:var(--accent)}
+.job-body{display:flex;flex-direction:column;gap:8px;min-width:0}
+.job h3{font-size:19px;font-weight:700;letter-spacing:-.01em}
+.org{font-size:14.5px;color:var(--muted)}
+.org em{font-style:normal;color:var(--ink);font-weight:500}
+.job ul{margin:4px 0 0;padding-left:18px;display:flex;flex-direction:column;gap:5px;font-size:15px;max-width:66ch}
+.job li::marker{color:var(--accent)}
+details.older{border-bottom:1px solid var(--line)}
+details.older>summary{cursor:pointer;list-style:none;padding-block:18px;font-family:var(--mono);font-size:13px;color:var(--accent)}
+details.older>summary::-webkit-details-marker{display:none}
+details.older>summary::before{content:"+ "}
+details.older[open]>summary::before{content:"– "}
+details.older .job:last-child{border-bottom:0}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 40px}
+@media (max-width:640px){.skills{grid-template-columns:minmax(0,1fr)}}
+.skill h3{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;margin-bottom:10px}
+.skill p{font-size:15.5px}
+.rank{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px 22px;display:flex;flex-direction:column;gap:14px}
+.rank-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.rank-head b{font-family:var(--display);font-size:18px}
+.rank-head a{font-size:13px}
+.bars{display:flex;flex-direction:column;gap:9px}
+.bar{display:grid;grid-template-columns:96px minmax(0,1fr) 108px;gap:12px;align-items:center;font-size:13.5px}
+.bar .track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar .fill{height:100%;background:var(--accent);border-radius:3px}
+.bar .pct{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:480px){.bar{grid-template-columns:80px minmax(0,1fr) 92px;gap:8px}}
+.note{font-size:12.5px;color:var(--muted)}
+
+/* Community & writing */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+@media (max-width:640px){.two{grid-template-columns:minmax(0,1fr)}}
+.list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.list li{display:flex;justify-content:space-between;gap:16px;padding-block:11px;border-bottom:1px solid var(--line);font-size:15px}
+.list li:first-child{border-top:1px solid var(--line)}
+.list li span:last-child{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap;padding-top:3px}
+.list a{text-decoration:none;color:var(--ink)}
+.list a:hover{color:var(--accent)}
+
+/* Contact */
+.contact{background:var(--ink);color:var(--bg);border-radius:14px;padding:clamp(24px,5vw,44px);display:flex;flex-direction:column;gap:18px}
+.contact h2{color:var(--bg);font-size:clamp(28px,4vw,40px)}
+.contact p{max-width:52ch;opacity:.8}
+.contact .email code{font-size:15px}
+.contact .btn{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 35%,transparent)}
+.contact .links a{background:transparent;color:var(--bg);border-color:color-mix(in srgb,var(--bg) 30%,transparent)}
+.contact .links a:hover{border-color:var(--bg)}
+footer{font-family:var(--mono);font-size:12px;color:var(--muted)}
+</style>
+<style>html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style>
+</head>
+<body>
+
+<div class="wrap">
+  <aside class="id">
+    <div class="mono-mark" aria-hidden="true">ER</div>
+    <div>
+      <h1>Elijah <span>Rwothoromo</span></h1>
+    </div>
+    <p class="role">Senior Software Engineer · Kampala, UG</p>
+    <p class="thesis">I build mobile apps and platforms that keep working when the network doesn't.</p>
+    <p class="status"><span class="dot" aria-hidden="true"></span>Open to senior remote roles · UTC+3</p>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#community">Community &amp; writing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/rwothoromoelaijah/">LinkedIn</a>
+      <a href="https://github.com/Rwothoromo">GitHub</a>
+      <a href="https://profile.codersrank.io/user/rwothoromo">CodersRank</a>
+      <a href="https://stackoverflow.com/users/9788442/elir">Stack Overflow</a>
+      <a href="https://rwothoromo.wordpress.com/">Blog</a>
+    </div>
+  </aside>
+
+  <main>
+    <section id="about">
+      <header>
+        <span class="eyebrow">About</span>
+        <h2>Ten years shipping software for health, farming, finance and the weather.</h2>
+      </header>
+      <div class="prose">
+        <p class="lede">I'm a senior engineer working across <strong>mobile</strong> (Kotlin, Jetpack Compose, Flutter, React Native), <strong>backend</strong> (Django, Flask, Laravel) and <strong>web</strong> (Vue 3, TypeScript, Next.js). I've worked remotely with teams in the US, Canada and Kenya since 2019.</p>
+        <p>Much of my work has been for people on patchy connections and older phones: offline farmer profiling that syncs later, QR ticket checks that work without signal, APK splits that shrink downloads for fragmented device markets. I also like rescuing legacy codebases. I've led rewrites from MVI/Hilt to Compose/MVVM/Koin, from Vue 2 to Vue 3 with TypeScript, and a hospital system's move to Laravel.</p>
+        <p>Outside the code I mentor developers, organise community events as an Andela Community Ambassador, play chess and write the occasional poem.</p>
+      </div>
+      <div class="figs">
+        <div class="fig"><b>45M</b><span>monthly users on The Weather Channel Android app</span></div>
+        <div class="fig"><b>50k+</b><span>patients served by Streamline at Kisiizi Hospital</span></div>
+        <div class="fig"><b>13</b><span>hospitals in Uganda running Streamline</span></div>
+        <div class="fig"><b>Top 1%</b><span>CodersRank score worldwide</span></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <header>
+        <span class="eyebrow">Selected work</span>
+        <h2>Products I've built or rebuilt</h2>
+      </header>
+      <div class="work">
+        <article class="card">
+          <div class="sector"><span>Civic tech · Lead</span><span>2026–</span></div>
+          <h3>The Watchdog App</h3>
+          <p>A global poll and research platform where people vote, back opinions with links, earn rewards and tip creators. I lead the Flutter app end to end.</p>
+          <p class="proof">Firebase OTP login, role-based onboarding, a ranked live feed with countdowns, digital wallet and deep-linked push.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Firebase</span><span class="tag">PHP</span></div>
+        </article>
+        <article class="card">
+          <div class="sector"><span>Events</span><span>2025–26</span></div>
+          <h3>Hoppers</h3>
+          <p>Event booking across a Flutter app, a Django REST API and a Next.js admin dashboard. I owned all three.</p>
+          <p class="proof">Offline QR ticket validation with bulk sync, manual fallback and fraud checks, built for venues with no signal.</p>
+          <div class="tags"><span class="tag">Flutter</span><span class="tag">Django REST</span><span class="tag">Next.js</span><span class="tag">FCM</span></div>
+        </article>
+        <article class="card">
+          <div class="sector"><span>Agriculture · Gov</span><span>2026</span></div>
+          <h3>ABCD Portal</h3>
+          <p>Uganda's national commodity intelligence portal for policymakers, producers and investors, built with Makerere Innovation and Incubation Centre.</p>
+          <p class="proof">Rebuilt the front end in Vue 3 + TypeScript and shipped the Commodity Performance module with district tables and CSV/PDF export.</p>
+          <div class="tags"><span class="tag">Laravel 12</span><span class="tag">Vue 3</span><span class="tag">TypeScript</span><span class="tag">Mapbox</span></div>
+        </article>
+        <article class="card">
+          <div class="sector"><span>Fintech</span><span>2025</span></div>
+          <h3>Wabeh · Angaza</h3>
+          <p>A loan origination system for financing phones, e-bikes and solar kits, scoring credit from M-Pesa statements.</p>
+          <p class="proof">Led the rewrite to Jetpack Compose, MVVM and Koin, plus S3 + Lambda ABI-split delivery to cut APK size.</p>
+          <div class="tags"><span class="tag">Kotlin</span><span class="tag">Compose</span><span class="tag">AWS Lambda</span></div>
+        </article>
+        <article class="card">
+          <div class="sector"><span>Logistics</span><span>2025–26</span></div>
+          <h3>LoadMaster</h3>
+          <p>On-demand freight app matching cargo with truck drivers.</p>
+          <p class="proof">Looping trip-alert sounds via Notifee, trip-state recovery after app closure, and an AI agent/skills setup for releases, PRs and tests.</p>
+          <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">TypeScript</span></div>
+        </article>
+        <article class="card">
+          <div class="sector"><span>Health</span><span>2016–22</span></div>
+          <h3>Streamline HIS</h3>
+          <p>A hospital information system used by 13 Ugandan hospitals. I recommended and helped lead its migration to Laravel.</p>
+          <p class="proof">Built the finance modules: journals, balance sheet, cash flow and payables aging.</p>
+          <div class="tags"><span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span></div>
+          <a class="more" href="http://streamlinehealth.org/">streamlinehealth.org</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <header>
+        <span class="eyebrow">Experience</span>
+        <h2>Where I've worked</h2>
+      </header>
+      <div class="tl">
+        <div class="job">
+          <div class="when"><span class="now">Jun 2026 – now</span><span>Remote · Atlanta</span></div>
+          <div class="job-body">
+            <h3>Product &amp; Mobile Engineering Lead</h3>
+            <p class="org"><em>The Watchdog App, Inc.</em> · Contract</p>
+            <ul>
+              <li>Lead end-to-end development of the cross-platform Flutter app.</li>
+              <li>Built phone OTP auth, role-based screens, poll creation, the live feed, a "Watch" follow system and the wallet.</li>
+              <li>Push notifications that route correctly whether the app is open, backgrounded or closed.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="when"><span>Jun – Sep 2026</span><span>Kampala</span></div>
+          <div class="job-body">
+            <h3>Software Developer (Consultant)</h3>
+            <p class="org"><em>Makerere Innovation and Incubation Centre</em></p>
+            <ul>
+              <li>Rebuilt the ABCD Portal front end from Laravel + Vue 2 to Laravel 12, Vue 3, TypeScript and Vuetify 3.</li>
+              <li>Introduced a data-provenance badge so each panel shows whether its data is live, bundled or illustrative.</li>
+              <li>Fixed the Docker boot blocker and standardised local and containerised dev setup.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="when"><span>Dec 2025 – Sep 2026</span><span>Remote</span></div>
+          <div class="job-body">
+            <h3>Senior Mobile Engineer</h3>
+            <p class="org"><em>Hoppers</em> · Contract</p>
+            <ul>
+              <li>Owned the Flutter app, Django REST API and Next.js admin dashboard.</li>
+              <li>Shipped offline QR ticket validation, the FCM notification pipeline and Crashlytics with dSYM automation.</li>
+              <li>Led a branding refresh and handled Play Store releases through GitHub Actions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="when"><span>Sep 2025 – Jun 2026</span><span>Remote</span></div>
+          <div class="job-body">
+            <h3>Senior Mobile Engineer</h3>
+            <p class="org"><em>Graduate Innovation ThinkTank</em> · LoadMaster</p>
+            <ul>
+              <li>Built driver verification, order history and daily logs with trip timelines and earnings.</li>
+              <li>Fixed trip-state persistence after app closure and Google Maps freezes.</li>
+              <li>Set up modular AI agents and skills for releases, secrets, PR creation and test writing.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="when"><span>Jun – Nov 2025</span><span>Remote · San Francisco</span></div>
+          <div class="job-body">
+            <h3>Senior Mobile Engineer (Android)</h3>
+            <p class="org"><em>Angaza</em> · Wabeh</p>
+            <ul>
+              <li>Led the redesign with wireframes and prototypes, then the full rewrite to Compose, MVVM and Koin.</li>
+              <li>Built S3 + Lambda ABI-split distribution to reduce APK size.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="when"><span>May 2022 – Jul 2024</span><span>Remote · Georgia</span></div>
+          <div class="job-body">
+            <h3>Mobile Developer (Android)</h3>
+            <p class="org"><em>The Weather Company, an IBM Business</em></p>
+            <ul>
+              <li>Worked on The Weather Channel app, used by over 45 million people a month.</li>
+              <li>Helped rebuild the legacy app with Jetpack Compose and server-driven UI.</li>
+              <li>Improved TalkBack accessibility, ran Airlock sign-up experiments, and cut app size with ProGuard.</li>
+            </ul>
+          </div>
+        </div>
+        <details class="older">
+          <summary>Earlier roles, 2015 – 2024</summary>
+          <div class="job">
+            <div class="when"><span>Jun 2022 – Dec 2024</span><span>Remote · Toronto</span></div>
+            <div class="job-body">
+              <h3>Android Engineer</h3>
+              <p class="org"><em>OffShoot / Resurva</em> · Part-time</p>
+              <ul><li>Appointment booking app: foldable and new-Android support, new screens, removal of Kotlin synthetics.</li></ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Jul 2020 – Oct 2022</span><span>Kampala</span></div>
+            <div class="job-body">
+              <h3>Android Engineer</h3>
+              <p class="org"><em>Hamwe East Africa</em> · FASCIS, NUCAFE</p>
+              <ul><li>Farmer, agent and supplier profiling with GPS capture and offline collection that syncs when back online.</li></ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Jan – Jul 2021</span><span>Remote · Austin</span></div>
+            <div class="job-body">
+              <h3>Android Engineer</h3>
+              <p class="org"><em>Evo Security</em> · Evo Secure Login</p>
+              <ul><li>MFA app: offline access, security questions, and restoring OTP keys after a lost phone.</li></ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Oct 2016 – Apr 2022</span><span>Mbarara · Remote</span></div>
+            <div class="job-body">
+              <h3>Software Programmer → Developer</h3>
+              <p class="org"><em>Innovation Streams</em> · Streamline, Streamcredit</p>
+              <ul>
+                <li>Led Streamline's migration to Laravel and built its finance modules.</li>
+                <li>Scaled Streamcredit, a finance system used by five financial institutions, and trained interns.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Jul – Nov 2019</span><span>Remote · San Francisco</span></div>
+            <div class="job-body">
+              <h3>Android Engineer</h3>
+              <p class="org"><em>Bleacher Report</em></p>
+              <ul><li>Account creation, profiles and social features for an app with 5M+ monthly users.</li></ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Apr 2018 – Mar 2020</span><span>Kampala</span></div>
+            <div class="job-body">
+              <h3>Software Engineer</h3>
+              <p class="org"><em>Andela</em></p>
+              <ul>
+                <li>Pulse and Converge (Android), WeConnect (Flask + React).</li>
+                <li>External Communications Lead on the Culture Council; learning facilitator and interviewer.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <div class="when"><span>Oct 2015 – Apr 2016</span><span>Kampala</span></div>
+            <div class="job-body">
+              <h3>Applications Consultant</h3>
+              <p class="org"><em>HRP Solutions Uganda</em></p>
+              <ul><li>Microsoft Dynamics NAV customisation, reports, payroll automation and client training.</li></ul>
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section id="skills">
+      <header>
+        <span class="eyebrow">Skills</span>
+        <h2>Tools I reach for</h2>
+      </header>
+      <div class="skills">
+        <div class="skill"><h3>Mobile</h3><p>Kotlin, Java, Jetpack Compose, Flutter/Dart, React Native/Expo, MVVM, Koin, Room, Firebase</p></div>
+        <div class="skill"><h3>Backend</h3><p>Django &amp; DRF, Flask, Laravel/PHP, Node.js, MySQL, PostgreSQL, GraphQL</p></div>
+        <div class="skill"><h3>Web</h3><p>Vue 3, TypeScript, Next.js, React, Vuetify, Tailwind, vanilla JavaScript</p></div>
+        <div class="skill"><h3>DevOps &amp; AI</h3><p>GitHub Actions, Docker, AWS (S3, Lambda), Crashlytics; LangChain, LlamaIndex, RAG, Ollama, Claude, Copilot</p></div>
+      </div>
+      <div class="rank">
+        <div class="rank-head"><b>CodersRank, by language</b><a href="https://profile.codersrank.io/user/rwothoromo">View profile</a></div>
+        <div class="bars" role="list">
+          <div class="bar" role="listitem"><span>TypeScript</span><div class="track"><div class="fill" style="width:99.1%"></div></div><span class="pct">top 0.9% world</span></div>
+          <div class="bar" role="listitem"><span>Python</span><div class="track"><div class="fill" style="width:99%"></div></div><span class="pct">top 1% world</span></div>
+          <div class="bar" role="listitem"><span>Kotlin</span><div class="track"><div class="fill" style="width:98%"></div></div><span class="pct">top 2% world</span></div>
+          <div class="bar" role="listitem"><span>Dart</span><div class="track"><div class="fill" style="width:98%"></div></div><span class="pct">top 2% world</span></div>
+          <div class="bar" role="listitem"><span>PHP</span><div class="track"><div class="fill" style="width:98%"></div></div><span class="pct">top 2% world</span></div>
+          <div class="bar" role="listitem"><span>Vue</span><div class="track"><div class="fill" style="width:96%"></div></div><span class="pct">top 4% world</span></div>
+        </div>
+        <p class="note">Percentile among developers ranked on CodersRank. Also #1 Kotlin developer in Uganda.</p>
+      </div>
+    </section>
+
+    <section id="community">
+      <header>
+        <span class="eyebrow">Community &amp; writing</span>
+        <h2>Teaching, leading, writing</h2>
+      </header>
+      <div class="two">
+        <div>
+          <ul class="list">
+            <li><span>Andela Community Ambassador</span><span>now</span></li>
+            <li><span>Andela Culture Council, External Comms Lead</span><span>2018–19</span></li>
+            <li><span>Google Student Ambassador, Kyambogo</span><span>2013–14</span></li>
+            <li><span>Mozilla Webmaker mentor</span><span>2013–14</span></li>
+            <li><span>BSc IT &amp; Computing, Kyambogo University (Upper Second)</span><span>2015</span></li>
+            <li><span>AI &amp; LLM Engineering, Andela</span><span>2025</span></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="list">
+            <li><a href="https://rwothoromo.wordpress.com/2021/01/04/flask-vs-django/">Flask vs Django</a><span>2021</span></li>
+            <li><a href="https://rwothoromo.wordpress.com/2020/05/29/uses/">/uses: my tools and setup</a><span>2020</span></li>
+            <li><a href="https://rwothoromo.wordpress.com/blog-2/">Poetry and other musings</a><span>blog</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <span class="eyebrow" style="color:var(--signal)">Contact</span>
+        <h2>Have a product that needs to ship?</h2>
+        <p>I'm open to senior mobile or full-stack roles and contract work, remote from Kampala. Email is the fastest way to reach me.</p>
+        <div class="email"><code id="mail">rwothoromoelijah@gmail.com</code><button class="btn" id="copy" type="button">Copy</button></div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/rwothoromoelaijah/">LinkedIn</a>
+          <a href="https://github.com/Rwothoromo">GitHub</a>
+          <a href="https://twitter.com/rwothoromo">X / Twitter</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Elijah Rwothoromo · Kampala, Uganda</footer>
+  </main>
+</div>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var btn=this, text=document.getElementById('mail').textContent;
+  function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1600)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('mail'));var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected';setTimeout(function(){btn.textContent='Copy'},1600)}
+  try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+});
+</script>
+</body>
+</html>
